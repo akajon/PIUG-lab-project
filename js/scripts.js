@@ -89,4 +89,21 @@ function filterFunction() {
             a[i].style.display = "none";
         }
     }
-  } 
+} 
+
+bckColor = "green";
+
+function changeStyle(){
+    var masthead = document.getElementById("masthead");
+    var about = document.getElementById("about");
+    if (bckColor == "green") {
+        masthead.style.backgroundColor = "#cacaca";
+        about.style.backgroundColor = "#cacaca";
+        bckColor = "yellow"
+    }
+    else {
+        masthead.style.backgroundColor = "#49cd8d";
+        about.style.backgroundColor = "#49cd8d";
+        bckColor = "green"
+    }
+}
